@@ -254,3 +254,17 @@
     -webkit-text-fill-color: transparent;
     -mo-text-fill-color: transparent;
 }
+
+.highlight {
+    border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .hero__heading {
+        font-size: 60px;
+    }
+
+    .hero__description {
+        font-size: 40px;
+    }
+}
