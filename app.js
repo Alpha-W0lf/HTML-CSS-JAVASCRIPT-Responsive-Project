@@ -22,22 +22,22 @@ const highlightMenu = () => {
     if(window.innerWidth > 960 && scrollPos < 600) {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
-        return
+        return;
     } else if(window.innerWidth > 960 && scrollPos < 1400) {
-        aboutMenu.classList.add('highlight')
-        homeMenu.classList.remove('highlight')
-        servicesMenu.classList.remove('highlight')
-        return
+        aboutMenu.classList.add('highlight');
+        homeMenu.classList.remove('highlight');
+        servicesMenu.classList.remove('highlight');
+        return;
     } else if(window.innerWidth > 960 && scrollPos < 2345) {
-        servicesMenu.classList.remove('highlight')
-        aboutMenu.classList.remove('highlight')
-        return
+        servicesMenu.classList.add('highlight');
+        aboutMenu.classList.remove('highlight');
+        return;
     }
 
     if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
-        elem.classList.remove('highlight')
+        elem.classList.remove('highlight');
     }
+};
 
-}
-
-
+window.addEventListener('scroll', highlightMenu);
+window.addEventListener('click', highlightMenu);
