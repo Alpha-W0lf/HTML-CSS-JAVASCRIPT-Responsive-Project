@@ -19,6 +19,6 @@ const highlightMenu = () => {
     let scrollPos = window.scrollY
 
     // adds 'highlight' class to my menu items
-    
+    if(window.innerWidth > 960 && scrollPos < 600)
 
 }
